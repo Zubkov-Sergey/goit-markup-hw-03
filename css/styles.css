@@ -7,6 +7,7 @@
  --color-heroblack: #2F303A;
  --color-contacts: rgba(255, 255, 255, 0.6);
  --color-buttons:  #F5F4FA;
+ --color-button: #188CE8;
  --color-port: #EEEEEE;
  --color-header: #ECECEC;
 }
@@ -151,8 +152,12 @@ body {
  color: var(--color-white);
  background: var(--color-blue);
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ border: none;
  border-radius: 4px;
  cursor: pointer;
+}
+.hero-btn:hover {
+    background-color: var(--color-button);
 }
 
 /*--------benefits------------*/
@@ -276,21 +281,11 @@ body {
  max-width: 370px;
  width: calc((100%-60px)/3);
  background: var(--color-white);
- border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: var(--color-port);
- border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--color-port);
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: var(--color-port);
 }
 .port-conteiner {
-    margin-bottom: 20px;
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-top: 20px;
+    padding:20px 24px;
+    border: 1px solid var(--color-port) ;
+    border-top: none;
 }
 .portfolio-item-title {
  font-weight: 700;
@@ -325,13 +320,19 @@ body {
 .footer-logo-web {
  color: var(--color-blue);
 }
+.footer-address {
+ padding-top: 20px;
+}
 .footer-list {
  font-style: normal;
  font-size: 14px;
  line-height: 1.714;
  letter-spacing: 0.03em;
- padding-top: 20px;
 }
+.footer-item {
+ margin-top: 9px;
+}
+
 .footer-list-item {
  text-decoration: none;
  color: var(--color-white);
@@ -342,5 +343,4 @@ body {
 }
 .contacts {
  color: var(--color-contacts);
- padding-top: 9px;
 }
